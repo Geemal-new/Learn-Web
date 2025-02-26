@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <style>
+        body{
+            background-color:rgb(255, 255, 255);
+
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        h1{
+            text-align: center;
+            color:#000000;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav {
+            margin: 1px;
+            background: #030303;
+            padding: 1px;
+            
+            .menuItems {
+              list-style: none;
+              display: flex;
+              
+          
+              li {
+                margin: 10px;
+                
+          
+                a {
+                  text-decoration: none;
+                  color: #8f8f8f;
+                  font-size: 24px;
+                  font-weight: 400;
+                  transition: all 0.5s ease-in-out;
+                  position: relative;
+                  text-transform: uppercase;
+                  
+          
+                  &::before {
+                    content: attr(data-item);
+                    transition: 0.5s;
+                    color: #ffffff;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 0;
+                    overflow: hidden;
+                    
+                  }
+          
+                  &:hover {
+                    &::before {
+                      width: 100%;
+                      transition: all 0.5s ease-in-out;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        
+          *{
+            box-sizing: border-box;
+          }
+          .column{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+
+          }
+          .row{
+            content: "";
+            clear: both;
+            display: table;
+          }
+          @media screen and (max-width:500px){
+            .column{
+                width: 100%;
+            }
+
+          } 
+    </style>
+</head>
+<body >
+    
+    <nav>
+        <ul class="menuItems" >
+            <li><a href='./index.html' data-item='Home'>Home</a></li>
+            <li><a href='./destinations.html' data-item='Destinations'>Destinations</a></li>
+            <li><a href='./blog.html' data-item='Blog'>Blog</a></li>
+            <li><a href='./gallery.html' data-item='Gallery'>Gallery</a></li>
+            <li><a href='./about.html' data-item='About'>About</a></li>
+            <li><a href='./contact.html' data-item='Contact'>Contact</a></li>
+            <li><a href='./blog.html' data-item='Blog'>Blog</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <img  src="https://i.etsystatic.com/26264481/r/il/b014e1/3767132252/il_fullxfull.3767132252_98c6.jpg" style="width:100%;">
+        <div class="centered"><h1>EXPLORE OUR WORLD</h1></div>
+
+        
+    
+    </div>
+    <div  class="row">
+      <div class="column">
+        <img src="https://images.pexels.com/photos/839443/pexels-photo-839443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+        <h3>Blog</h3>
+      </div>
+      <div class="column">
+        <img src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+        <h3>Destinations</h3>
+      </div>
+      <div class="column">
+        <img src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+        <h3>Gallery</h3>
+      </div>
+
+    </div>
+
+    
+
+    
+</body>
+</html>

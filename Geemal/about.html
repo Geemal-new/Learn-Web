@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(255, 255, 255);
+
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        h1{
+            text-align: center;
+            color:#000000;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav {
+            margin: 1px;
+            background: #030303;
+            padding: 1px;
+            
+            .menuItems {
+              list-style: none;
+              display: flex;
+              
+          
+              li {
+                margin: 10px;
+                
+          
+                a {
+                  text-decoration: none;
+                  color: #8f8f8f;
+                  font-size: 24px;
+                  font-weight: 400;
+                  transition: all 0.5s ease-in-out;
+                  position: relative;
+                  text-transform: uppercase;
+                  
+          
+                  &::before {
+                    content: attr(data-item);
+                    transition: 0.5s;
+                    color: #ffffff;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 0;
+                    overflow: hidden;
+                    
+                  }
+          
+                  &:hover {
+                    &::before {
+                      width: 100%;
+                      transition: all 0.5s ease-in-out;
+                    }
+                  }
+                }
+              }
+            }
+          }
+           
+          
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menuItems" >
+            <li><a href='./index.html' data-item='Home'>Home</a></li>
+            <li><a href='./destinations.html' data-item='Destinations'>Destinations</a></li>
+            <li><a href='./blog.html' data-item='Blog'>Blog</a></li>
+            <li><a href='./gallery.html' data-item='Gallery'>Gallery</a></li>
+            <li><a href='./about.html' data-item='About'>About</a></li>
+            <li><a href='./contact.html' data-item='Contact'>Contact</a></li>
+            <li><a href='./blog.html' data-item='Blog'>Blog</a></li>
+
+        </ul>
+    </nav>
+    
+</body>
+</html>
