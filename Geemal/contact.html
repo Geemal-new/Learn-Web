@@ -72,6 +72,35 @@
               }
             }
           }
+          input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+          input [type=submit] {
+            width: 100%;
+            background-color: aquamarine;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+          }
+          input [type=submit]:hover {
+            background-color: aqua;
+          }
+          .form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+
+          }
         
     </style>
 </head>
@@ -88,6 +117,30 @@
 
         </ul>
     </nav>
+    <div class="container">
+      <img src="https://capital-placement.com/wp-content/uploads/2021/07/The-benefits-of-travelling.jpg" style="width: 100%;">
+      <div class="centered"><h1>CONTACT <br> Send me your questions,comments or suggestions!</h1></div>
+      
+
+    </div>
+    <div class="form">
+      <form action="#">
+        <label for="fname">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name...">
+
+        <label for="lname">Your email</label>
+        <input type="text" id="email" name="email" placeholder="Your email...">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the Subject">
+
+        <label for="message">Your messeage</label>
+        <input type="text" id="message" name="message" placeholder="Enter your message">
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
     
 </body>
 </html>
